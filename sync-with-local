@@ -1,0 +1,23 @@
+#!/bin/bash
+
+nvim() {
+	rsync -avz --delete ~/.config/nvim .
+}
+
+git() {
+	cp ~/.gitconfig git/config
+}
+
+case "$1" in
+"vim" | "nvim")
+	nvim
+	;;
+"git")
+	git
+	;;
+"all")
+	nvim
+	git
+	;;
+esac
+

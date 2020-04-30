@@ -1,0 +1,11 @@
+[alias]
+	br = branch
+	st = status
+	co = checkout
+	cm = commit
+	stu = stash save --include-untracked
+	difs = diff --staged
+	sm = submodule
+	pur = pull --rebase
+[core]
+	editor = nvim
