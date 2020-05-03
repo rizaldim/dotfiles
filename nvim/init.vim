@@ -12,3 +12,6 @@ set shiftwidth=2
 set hidden
 set colorcolumn=81
 set number
+
+set ignorecase
+set smartcase
