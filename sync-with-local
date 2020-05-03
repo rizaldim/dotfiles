@@ -15,7 +15,7 @@ case "$1" in
 "git")
 	git
 	;;
-"all")
+"" | "all")
 	nvim
 	git
 	;;
