@@ -112,13 +112,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 source ~/.bash-completion/git-completion.bash
 __git_complete g _git
 
 export PATH="/opt/datagrip/bin:/opt/flutter/bin:$PATH"
 export VIMCONFIG="$HOME/.config/nvim"
 export VIMDATA="$HOME/.local/share/nvim"
+
+source ~/.bash/apps/nvm
