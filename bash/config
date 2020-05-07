@@ -118,4 +118,5 @@ export PATH="/opt/datagrip/bin:/opt/flutter/bin:$PATH"
 source ~/.bash/apps/nvm
 source ~/.bash/apps/vim
 source ~/.bash/apps/git
+source ~/.bash/apps/fzf
 

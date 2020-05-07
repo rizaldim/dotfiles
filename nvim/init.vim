@@ -16,5 +16,21 @@ set number
 set ignorecase
 set smartcase
 
+let mapleader = ","
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
+" Fuzzy search file
+nnoremap <C-p> :<C-u>FZF<CR>
+
+let g:grepper = {}
+let g:grepper.tools = ['rg', 'git', 'grep']
+
+nnoremap <Leader>g :Grepper -tool rg<CR>
+
+" Search for the current word
+nnoremap <Leader>* :Grepper -cword -noprompt<CR>
+
+" Search for the current selection
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
 
