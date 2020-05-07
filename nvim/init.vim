@@ -15,3 +15,6 @@ set number
 
 set ignorecase
 set smartcase
+
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
