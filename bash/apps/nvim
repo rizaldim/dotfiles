@@ -1,0 +1,2 @@
+export VIMCONFIG="$HOME/.config/nvim"
+export VIMDATA="$HOME/.local/share/nvim"

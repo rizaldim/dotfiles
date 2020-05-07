@@ -1,0 +1,2 @@
+source ~/.bash/completion/git
+__git_complete g _git

@@ -4,6 +4,7 @@ ln -sf "$PWD/shell/profile" ~/.profile
 ln -sf "$PWD/bash/config" ~/.bashrc
 ln -sf "$PWD/bash/alias" ~/.bash/alias
 ln -sf -T "$PWD/bash/apps" ~/.bash/apps
+ln -sf -T "$PWD/bash/completion" ~/.bash/completion
 
 ln -sf -T "$PWD/nvim" ~/.config/nvim
 if [ -f "$PWD/git/local.config" ]; then
