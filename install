@@ -1,8 +1,10 @@
 #!/bin/bash
 
+ln -sf "$PWD/shell/profile" ~/.profile
 ln -sf "$PWD/nvim" ~/.config/nvim
 if [ -f "$PWD/git/local.config" ]; then
 	ln -sf "$PWD/git/local.config" ~/.gitconfig.local
 fi
 ln -sf "$PWD/git/config" ~/.gitconfig
 ln -sf "$PWD/tmux/config" ~/.tmux.conf
+
