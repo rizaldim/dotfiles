@@ -2,7 +2,9 @@
 
 ln -sf "$PWD/shell/profile" ~/.profile
 ln -sf "$PWD/bash/config" ~/.bashrc
-ln -sf "$PWD/nvim" ~/.config/nvim
+ln -sf "$PWD/bash/alias" ~/.bash_aliases
+
+ln -sf -T "$PWD/nvim" ~/.config/nvim
 if [ -f "$PWD/git/local.config" ]; then
 	ln -sf "$PWD/git/local.config" ~/.gitconfig.local
 fi
