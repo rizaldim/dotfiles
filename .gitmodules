@@ -4,3 +4,6 @@
 [submodule "nvim/pack/bundle/start/fzf"]
 	path = nvim/pack/bundle/start/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "nvim/pack/bundle/start/vim-grepper"]
+	path = nvim/pack/bundle/start/vim-grepper
+	url = https://github.com/mhinz/vim-grepper
