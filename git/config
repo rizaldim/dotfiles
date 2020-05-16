@@ -11,3 +11,4 @@
 	pur = pull --rebase
 [core]
 	editor = nvim
+	pager = less -x4
