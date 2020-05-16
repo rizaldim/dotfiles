@@ -4,17 +4,24 @@ call minpac#init()
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
+" Tabs and spaces
 set noexpandtab
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
 set hidden
+
 set colorcolumn=81
 set number
 
+" Searching
 set ignorecase
 set smartcase
+
+" Autocomplete
+set wildmenu
+set wildmode=full
 
 let mapleader = ","
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -34,3 +41,4 @@ nnoremap <Leader>* :Grepper -cword -noprompt<CR>
 nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
 
+nnoremap <Leader><Space> :noh<CR>
