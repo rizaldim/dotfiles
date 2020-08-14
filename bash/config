@@ -113,10 +113,13 @@ if ! shopt -oq posix; then
 fi
 
 
-export PATH="/opt/datagrip/bin:/opt/flutter/bin:$PATH"
+export PATH="$PATH:/opt/idea/bin"
+export PATH="$PATH:/opt/android-studio/bin"
+export PATH="$PATH:/opt/flutter/bin:"
 
 source ~/.bash/apps/nvm
 source ~/.bash/apps/vim
 source ~/.bash/apps/git
 source ~/.bash/apps/fzf
+source ~/.bash/apps/sdkman
 
