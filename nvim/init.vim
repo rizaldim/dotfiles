@@ -10,6 +10,10 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 
+" Whitespace
+set listchars=tab:▸\ ,eol:¬
+set list
+
 set hidden
 
 set colorcolumn=81
@@ -21,7 +25,7 @@ set smartcase
 
 " Autocomplete
 set wildmenu
-set wildmode=full
+set wildmode=list:longest
 
 let mapleader = ","
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
@@ -42,3 +46,8 @@ nmap gs <plug>(GrepperOperator)
 xmap gs <plug>(GrepperOperator)
 
 nnoremap <Leader><Space> :noh<CR>
+
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
