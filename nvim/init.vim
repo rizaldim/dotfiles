@@ -1,5 +1,9 @@
 packadd minpac
 call minpac#init()
+
+call minpac#add('junegunn/fzf')
+call minpac#add('mhinz/vim-grepper')
+
 call minpac#add('tpope/vim-commentary', { 'type': 'opt' })
 
 packadd vim-commentary
