@@ -1,5 +1,8 @@
 packadd minpac
 call minpac#init()
+call minpac#add('tpope/vim-commentary', { 'type': 'opt' })
+
+packadd vim-commentary
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
@@ -26,6 +29,8 @@ set smartcase
 " Autocomplete
 set wildmenu
 set wildmode=list:longest
+
+set scrolloff=3
 
 let mapleader = ","
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'

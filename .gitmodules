@@ -7,3 +7,6 @@
 [submodule "nvim/pack/bundle/start/vim-grepper"]
 	path = nvim/pack/bundle/start/vim-grepper
 	url = https://github.com/mhinz/vim-grepper
+[submodule "nvim/pack/minpac/opt/vim-commentary"]
+	path = nvim/pack/minpac/opt/vim-commentary
+	url = https://github.com/tpope/vim-commentary
