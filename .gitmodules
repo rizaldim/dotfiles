@@ -1,12 +1,6 @@
 [submodule "nvim/pack/minpac/opt/minpac"]
 	path = nvim/pack/minpac/opt/minpac
 	url = https://github.com/k-takata/minpac
-[submodule "nvim/pack/bundle/start/fzf"]
-	path = nvim/pack/bundle/start/fzf
-	url = https://github.com/junegunn/fzf
-[submodule "nvim/pack/bundle/start/vim-grepper"]
-	path = nvim/pack/bundle/start/vim-grepper
-	url = https://github.com/mhinz/vim-grepper
 [submodule "nvim/pack/minpac/opt/vim-commentary"]
 	path = nvim/pack/minpac/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary
