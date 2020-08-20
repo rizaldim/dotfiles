@@ -1,12 +1,21 @@
 packadd minpac
 call minpac#init()
 
+" Fuzzy search
 call minpac#add('junegunn/fzf')
-call minpac#add('mhinz/vim-grepper')
 
+" For comment and uncomment
 call minpac#add('tpope/vim-commentary', { 'type': 'opt' })
 
+" Dependency for kana/vim-textobj-entire
+call minpac#add('kana/vim-textobj-user', { 'type': 'opt' })
+
+" Text object for entire buffer
+call minpac#add('kana/vim-textobj-entire', { 'type': 'opt' })
+
 packadd vim-commentary
+packadd vim-textobj-user
+packadd vim-textobj-entire
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
