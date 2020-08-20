@@ -122,4 +122,8 @@ source ~/.bash/apps/git
 source ~/.bash/apps/fzf
 source ~/.bash/apps/sdkman
 
+# use 4 spaces for tab in bash
 tabs -4
+
+# in less use 4 spaces for tabs and allow ANSI escape sequences
+export LESS="-x4 -R"
