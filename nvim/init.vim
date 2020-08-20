@@ -31,22 +31,28 @@ set shiftwidth=2
 set listchars=tab:▸\ ,eol:¬
 set list
 
+" Enable us to switch file without saving current buffer first
 set hidden
 
-set colorcolumn=81
+set colorcolumn=81,101
 set number
 
-" Searching
+" Ignore case when searching
 set ignorecase
+" but if search term is mixed case then don't ignore case
 set smartcase
 
 " Autocomplete
 set wildmenu
 set wildmode=list:longest
 
+" When cursor is moving up/down don't wait until it's in the first/last line to scroll.
+" In this setting, once cursor in the 3rd top/bottom line then scroll.
 set scrolloff=3
 
 let mapleader = ","
+
+" autocomple %% into current working directory
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Fuzzy search file
