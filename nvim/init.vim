@@ -10,6 +10,7 @@ packadd vim-commentary
 
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
+command! Rtp echo join(split(&runtimepath, ','), "\n")
 
 " Tabs and spaces
 set noexpandtab
