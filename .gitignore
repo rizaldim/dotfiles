@@ -1,3 +1,5 @@
 git/local.config
 nvim/.netrwhist
-nvim/pack
+/nvim/pack/minpac/opt/*
+/nvim/pack/minpac/start/*
+!/nvim/pack/minpac/opt/minpac
