@@ -112,7 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
 export PATH="$PATH:/opt/idea/bin"
 export PATH="$PATH:/opt/android-studio/bin"
 export PATH="$PATH:/opt/flutter/bin:"
@@ -123,3 +122,4 @@ source ~/.bash/apps/git
 source ~/.bash/apps/fzf
 source ~/.bash/apps/sdkman
 
+tabs -4
