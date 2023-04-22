@@ -7,10 +7,12 @@ set softtabstop=4
 
 filetype on
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+" highlight trailing whitespaces
+highlight TrailingWhitespace ctermbg=red guibg=red
+match TrailingWhitespace /\s\+$/
 
 autocmd FileType html call Html_settings()
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 function! Html_settings()
   setlocal tabstop=2
