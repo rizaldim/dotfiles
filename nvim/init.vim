@@ -4,12 +4,10 @@ set number
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set termguicolors
 
+colorscheme slate
 filetype on
-
-" highlight trailing whitespaces
-highlight TrailingWhitespace ctermbg=red guibg=red
-match TrailingWhitespace /\s\+$/
 
 autocmd FileType html call Html_settings()
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
