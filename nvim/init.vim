@@ -1,3 +1,8 @@
+packadd minpac
+call minpac#init()
+call minpac#add('tpope/vim-unimpaired')
+call minpac#add('tpope/vim-scriptease', {'type': 'opt'})
+
 set listchars=tab:»\ ,eol:¬
 set list
 set number
@@ -6,7 +11,6 @@ set shiftwidth=4
 set softtabstop=4
 set termguicolors
 
-colorscheme slate
 filetype on
 
 autocmd FileType html call Html_settings()
@@ -17,3 +21,10 @@ function! Html_settings()
   setlocal shiftwidth=2
   setlocal softtabstop=2
 endfunction
+
+function! EchoRunTimePath()
+	echo join(split(&runtimepath, ','), "\n")
+endfunction
+
+command! RunTimePath call EchoRunTimePath()
+
