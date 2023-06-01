@@ -23,6 +23,7 @@ endfunction
 function! EchoRunTimePath()
 	echo join(split(&runtimepath, ','), "\n")
 endfunction
-
 command! RunTimePath call EchoRunTimePath()
+
+command! PackUpdate call minpac#update()
 
