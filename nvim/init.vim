@@ -1,5 +1,6 @@
 packadd minpac
 call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
 
 set listchars=tab:»\ ,eol:¬
 set list
@@ -26,4 +27,5 @@ endfunction
 command! RunTimePath call EchoRunTimePath()
 
 command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
 
