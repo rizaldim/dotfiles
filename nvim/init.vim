@@ -2,12 +2,23 @@ packadd minpac
 call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 
+" whitespace characters handling
 set listchars=tab:»\ ,eol:¬
 set list
+
+" searching
+set ignorecase
+set smartcase
+
+" line numbers
 set number
+
+" tab size and stuffs
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+
+" gui colors
 set termguicolors
 
 filetype on
