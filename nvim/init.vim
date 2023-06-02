@@ -29,3 +29,4 @@ command! RunTimePath call EchoRunTimePath()
 command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
+nnoremap <C-p> :<C-u>FZF<CR>
