@@ -27,3 +27,7 @@ will be pulled when updating the submodules. To install fzf binary, run:
 The binaries will be in **~/repo/dotfiles/nvim/pack/minpac/start/fzf/bin** directory.
 Add the path into your **PATH** environment variable or copy the binaries into
 one of the directories in your **PATH**.
+
+## Alacritty
+
+For alacritty, install its theme. Find the installation instruction in [its repo](https://github.com/alacritty/alacritty-theme).
