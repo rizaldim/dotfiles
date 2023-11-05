@@ -26,7 +26,15 @@ filetype on
 autocmd FileType html call Html_settings()
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
+autocmd FileType javascript call Javascript_settings()
+
 function! Html_settings()
+  setlocal tabstop=2
+  setlocal shiftwidth=2
+  setlocal softtabstop=2
+endfunction
+
+function! Javascript_settings()
   setlocal tabstop=2
   setlocal shiftwidth=2
   setlocal softtabstop=2
