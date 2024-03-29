@@ -1,9 +1,21 @@
 #!/usr/bin/env bash
 
 for item in zshrc tmux.conf; do
-  ln -fs "$PWD/$item" "$HOME/.$item"
+  if ((test -f "$HOME/.$item") && (test "$answer" != "a")); then
+    read -rp "File $HOME/.$item already exists. Overwrite? (y/n/a) " answer
+
+    if ((test "$answer" = "y") || (test "$answer" = "a"));
+    then
+      ln -fs "$PWD/$item" "$HOME/.$item";
+    else
+      echo "Skipped";
+    fi
+
+  else
+    ln -fs "$PWD/$item" "$HOME/.$item"
+  fi
 done
 
 for item in config/* ; do
-  ln -sf "$PWD/$item" "$HOME/.$item"
+  ln -fhs "$PWD/$item" "$HOME/.$item"
 done
