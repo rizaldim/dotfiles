@@ -28,6 +28,8 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 
 autocmd FileType javascript call Javascript_settings()
 
+autocmd FileType markdown call Markdown_settings()
+
 function! Html_settings()
   setlocal tabstop=2
   setlocal shiftwidth=2
@@ -40,6 +42,13 @@ function! Javascript_settings()
   setlocal softtabstop=2
 endfunction
 
+function! Markdown_settings()
+  setlocal tabstop=2
+  setlocal shiftwidth=2
+  setlocal softtabstop=2
+  setlocal expandtab
+endfunction
+
 function! EchoRunTimePath()
 	echo join(split(&runtimepath, ','), "\n")
 endfunction
@@ -49,3 +58,4 @@ command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
 nnoremap <C-p> :<C-u>FZF<CR>
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
