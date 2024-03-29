@@ -6,7 +6,7 @@ For example:
 ```bash
 ln -s ~/repo/dotfiles/nvim ~/.config/nvim
 ln -s ~/repo/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/repo/dotfiles/alacritty.yml ~/.alacritty.yml
+ln -s ~/repo/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 ```
 
 ## NeoVim
