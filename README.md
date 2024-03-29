@@ -1,12 +1,9 @@
 # dotfiles
 
-To use, create link to the respective config file or directories.
-For example:
+To use, run the following commands to create necessary soft links:
 
 ```bash
-ln -s ~/repo/dotfiles/nvim ~/.config/nvim
-ln -s ~/repo/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/repo/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
+./create-links.sh
 ```
 
 ## NeoVim
